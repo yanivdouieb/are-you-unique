@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"
+        href="data:image/png;base64,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"
+        type="image/x-icon">
+    <title>are you unique</title>
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 3rem;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            position: fixed;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: normal;
+            align-items: normal;
+            align-content: normal;
+            width: 90%;
+            height: auto;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .flex-items:nth-child(1) {
+            display: block;
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;
+            align-self: auto;
+            order: 0;
+            background-color: #FF7474;
+            height: 26vw;
+            width: 100%;
+            border-radius: 10000px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .flex-items:nth-child(2) {
+            display: block;
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;
+            align-self: auto;
+            order: 0;
+            background-color: #74FFAB;
+            height: 26vw;
+            width: 100%;
+            border-radius: 10000px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .flex-items:nth-child(3) {
+            display: block;
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;
+            align-self: auto;
+            order: 0;
+            background-color: #74CDFF;
+            height: 26vw;
+            width: 100%;
+            border-radius: 10000px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .flex-items {
+            border: 1px solid black;
+        }
+
+        .flex-container-comp {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: normal;
+            align-items: normal;
+            align-content: normal;
+            width: 100%;
+            height: 96px;
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+        }
+
+        .flex-items-comp:nth-child(1) {
+            display: block;
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;
+            align-self: auto;
+            order: 0;
+            width: 100%;
+            height: 8vw;
+            border-radius: 10px;
+            border: 2px solid black;
+            margin: 1vw;
+        }
+
+        .flex-items-comp:nth-child(2) {
+            display: block;
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;
+            align-self: auto;
+            order: 0;
+            width: 100%;
+            height: 8vw;
+            border-radius: 10px;
+            border: 2px solid black;
+            margin: 1vw;
+        }
+
+        .flex-items-comp:nth-child(3) {
+            display: block;
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;
+            align-self: auto;
+            order: 0;
+            width: 100%;
+            height: 8vw;
+            border-radius: 10px;
+            border: 2px solid black;
+            margin: 1vw;
+        }
+
+        .flex-items-comp:nth-child(4) {
+            display: block;
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;
+            align-self: auto;
+            order: 0;
+            width: 100%;
+            height: 8vw;
+            border-radius: 10px;
+            border: 2px solid black;
+            margin: 1vw;
+        }
+
+        .flex-items-comp:nth-child(5) {
+            display: block;
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;
+            align-self: auto;
+            order: 0;
+            width: 100%;
+            height: 8vw;
+            border-radius: 10px;
+            border: 2px solid black;
+            margin: 1vw;
+        }
+
+        .flex-items-comp:nth-child(6) {
+            display: block;
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;
+            align-self: auto;
+            order: 0;
+            width: 100%;
+            height: 8vw;
+            border-radius: 10px;
+            border: 2px solid black;
+            margin: 1vw;
+        }
+
+        .flex-items-comp:nth-child(7) {
+            display: block;
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;
+            align-self: auto;
+            order: 0;
+            width: 100%;
+            height: 8vw;
+            border-radius: 10px;
+            border: 2px solid black;
+            margin: 1vw;
+        }
+
+        .flex-items-comp:nth-child(8) {
+            display: block;
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;
+            align-self: auto;
+            order: 0;
+            width: 100%;
+            height: 8vw;
+            border-radius: 10px;
+            border: 2px solid black;
+            margin: 1vw;
+        }
+
+        .flex-items-comp:nth-child(9) {
+            display: block;
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;
+            align-self: auto;
+            order: 0;
+            width: 100%;
+            height: 8vw;
+            border-radius: 10px;
+            border: 2px solid black;
+            margin: 1vw;
+        }
+
+        .flex-items-comp:nth-child(10) {
+            display: block;
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;
+            align-self: auto;
+            order: 0;
+            width: 100%;
+            height: 8vw;
+            border-radius: 10px;
+            border: 2px solid black;
+            margin: 1vw;
+        }
+        #chance{
+            font-family: "Poppins";
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            font-size: 20px;
+            top: 90%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        @media screen and (min-width: 1034px) {
+            .flex-items:nth-child(3), .flex-items:nth-child(2), .flex-items:nth-child(1){
+                height: 300px;
+            }
+        }
+    </style>
+    <h1>are you unique</h1>
+    <div class="flex-container">
+        <div class="flex-items" id="red"></div>
+        <div class="flex-items" id="green"></div>
+        <div class="flex-items" id="blue"></div>
+    </div>
+    <div class="flex-container-comp">
+        <div class="flex-items-comp ok" id="1"></div>
+        <div class="flex-items-comp ok" id="2"></div>
+        <div class="flex-items-comp ok" id="3"></div>
+        <div class="flex-items-comp ok" id="4"></div>
+        <div class="flex-items-comp ok" id="5"></div>
+        <div class="flex-items-comp ok" id="6"></div>
+        <div class="flex-items-comp ok" id="7"></div>
+        <div class="flex-items-comp ok" id="8"></div>
+        <div class="flex-items-comp ok" id="9"></div>
+        <div class="flex-items-comp ok" id="10"></div>
+    </div>
+    <div id="chance"></div>
+    <script>
+        if(!localStorage.getItem("firstConnection")){
+            alert('Click on the colored circles to try to make a unique combination')
+            localStorage.setItem("firstConnection", false)
+        }else{}
+        var array = []
+        document.getElementById('red').addEventListener('click', () => {
+            for (var i = 1; i <= 10; i++) {
+                if (document.getElementById(i).classList.contains('ok')) {
+                    document.getElementById(i).classList.remove('ok');
+                    document.getElementById(i).style.backgroundColor = '#FF7474';
+                    array.push('red')
+                    break;
+                } else { }
+            }
+        })
+        document.getElementById('green').addEventListener('click', () => {
+            for (var i = 1; i <= 10; i++) {
+                if (document.getElementById(i).classList.contains('ok')) {
+                    document.getElementById(i).classList.remove('ok');
+                    document.getElementById(i).style.backgroundColor = '#74FFAB';
+                    array.push('green')
+                    break;
+                } else { }
+            }
+        })
+        document.getElementById('blue').addEventListener('click', () => {
+            for (var i = 1; i <= 10; i++) {
+                if (document.getElementById(i).classList.contains('ok')) {
+                    document.getElementById(i).classList.remove('ok');
+                    document.getElementById(i).style.backgroundColor = '#74CDFF';
+                    array.push('blue')
+                    break;
+                } else { }
+            }
+        })
+        var verifyState = setInterval(() => {
+            if (document.getElementById('10').classList.contains('ok')) {
+
+            } else {
+                fetch('/api/array', {
+                    method: 'GET',
+                    headers: {
+                        array: array
+                    }
+                }).then(res => { return res.json() }).then(data => {
+                    if (data.message == 'array found') {
+                        alert(data.data + ' people before you have already chosen this combination')
+                        for(var i = 1; i <= 10; i++){
+                            document.getElementById(i).classList.add('ok');
+                            document.getElementById(i).style.backgroundColor = 'transparent';
+                        }
+                    } else {
+                        alert('you are unique (0 people before you have already chosen this combination)')
+                        for(var i = 1; i <= 10; i++){
+                            document.getElementById(i).classList.add('ok');
+                            document.getElementById(i).style.backgroundColor = 'transparent';
+                        }
+                    }
+                })
+            }
+        }, 200)
+        fetch('/api/chanceNow')
+            .then(res => { return res.json() })
+            .then(data => {
+                document.getElementById('chance').innerHTML = `Only <strong>${data.data}</strong> unique combination left`
+            })
+        setInterval(() => {
+            fetch('/api/chanceNow')
+                .then(res => { return res.json() })
+                .then(data => {
+                    document.getElementById('chance').innerHTML = `Only <strong>${data.data}</strong> unique combination left`
+                })
+        }, 100)
+    </script>
+</body>
+
+</html>
