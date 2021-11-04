@@ -1,1 +1,7 @@
-{}
+{
+  "blue,green,green,red,green,blue,blue,green,red,red": 1,
+  "blue,green,green,red,green,blue,blue,green,red,red,red,red,red,red,red,red,red,red,red,red": 1,
+  "green,green,red,blue,blue,green,green,red,red,green": 1,
+  "red,red,red,green,green,blue,blue,blue,green,red": 1,
+  "red,red,red,green,green,blue,blue,blue,green,red,blue,green,green,blue,blue,blue,red,green,blue,blue": 1
+}
